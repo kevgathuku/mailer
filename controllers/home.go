@@ -79,7 +79,7 @@ func sendMail(from, to, subject, htmlContent string, mailer *mail.Mailer,
 func (h *Home) Index(w http.ResponseWriter, r *Frodo.Request) {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("Error loading .env file")
+		log.Println("Error loading .env file")
 	}
 	// Decode the JSON from the POST request body
 	decoder := json.NewDecoder(r.Body)
