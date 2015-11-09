@@ -8,12 +8,12 @@ import (
 	stdMail "net/mail"
 	"os"
 
-	"github.com/joho/godotenv"
+	"github.com/kevgathuku/mailer/Godeps/_workspace/src/github.com/joho/godotenv"
 
-	"github.com/kn9ts/frodo"
+	"github.com/kevgathuku/mailer/Godeps/_workspace/src/github.com/kn9ts/frodo"
 
-	"github.com/kevgathuku/postman/mail"
-	"gopkg.in/jordan-wright/email.v1"
+	"github.com/kevgathuku/mailer/Godeps/_workspace/src/github.com/kevgathuku/postman/mail"
+	"github.com/kevgathuku/mailer/Godeps/_workspace/src/gopkg.in/jordan-wright/email.v1"
 )
 
 var (

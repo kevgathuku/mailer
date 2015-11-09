@@ -1,0 +1,38 @@
+{
+	"ImportPath": "github.com/kevgathuku/mailer/controllers",
+	"GoVersion": "go1.5.1",
+	"Deps": [
+		{
+			"ImportPath": "github.com/fatih/color",
+			"Comment": "v0.1-8-g76d4231",
+			"Rev": "76d423163af754ff6423d2d9be0057fbf03c57c2"
+		},
+		{
+			"ImportPath": "github.com/joho/godotenv",
+			"Comment": "v1-10-g4ed1339",
+			"Rev": "4ed13390c0acd2ff4e371e64d8b97c8954138243"
+		},
+		{
+			"ImportPath": "github.com/kevgathuku/postman/mail",
+			"Comment": "v1.0-9-ga74398f",
+			"Rev": "a74398f9797b9d9d7c710cafb01b5eb707dd2831"
+		},
+		{
+			"ImportPath": "github.com/kn9ts/frodo",
+			"Rev": "96bd6122c12c3fc33b4c2ad67afbb0cb0de3276f"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-isatty",
+			"Rev": "7fcbc72f853b92b5720db4a6b8482be612daef24"
+		},
+		{
+			"ImportPath": "github.com/shiena/ansicolor",
+			"Rev": "a54d7ff4d92a268defe26e50d3187e6b6a2fa047"
+		},
+		{
+			"ImportPath": "gopkg.in/jordan-wright/email.v1",
+			"Comment": "v1.1",
+			"Rev": "a3d0a1a81cdc019c156640deea22a3454fde108e"
+		}
+	]
+}

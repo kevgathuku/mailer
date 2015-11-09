@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/kevgathuku/mailer/Godeps/_workspace/src/github.com/kn9ts/frodo"
 	"github.com/kevgathuku/mailer/controllers"
-	"github.com/kn9ts/frodo"
 	"net/http"
 )
 
@@ -16,8 +16,8 @@ func main() {
 	})
 
 	App.Post("/", &controller.Home{}, Frodo.Use{
-        Method: "Index",
-    })
+		Method: "Index",
+	})
 
 	App.Serve() // Open in browser http://localhost:3102/
 }
