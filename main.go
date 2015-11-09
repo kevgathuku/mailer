@@ -1,12 +1,19 @@
 package main
 
 import (
+	"github.com/joho/godotenv"
 	"github.com/kevgathuku/mailer/Godeps/_workspace/src/github.com/kn9ts/frodo"
 	"github.com/kevgathuku/mailer/controllers"
+	"log"
 	"net/http"
+	"os"
 )
 
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
 	// Create a new instance of Frodo
 	App := Frodo.New()
 
@@ -19,5 +26,7 @@ func main() {
 		Method: "Index",
 	})
 
-	App.Serve() // Open in browser http://localhost:3102/
+	// Specify PORT as an environment variable
+	// Necessary for running on Heroku
+	App.ServeOnPort(os.Getenv("PORT"))
 }
