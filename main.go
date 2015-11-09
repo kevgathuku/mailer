@@ -15,7 +15,9 @@ func main() {
 		w.Write([]byte("Hello World!!!"))
 	})
 
-	App.Post("/", &controller.Home{})
+	App.Post("/", &controller.Home{}, Frodo.Use{
+        Method: "Index",
+    })
 
 	App.Serve() // Open in browser http://localhost:3102/
 }
