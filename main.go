@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/joho/godotenv"
+	"github.com/kevgathuku/mailer/Godeps/_workspace/src/github.com/joho/godotenv"
 	"github.com/kevgathuku/mailer/Godeps/_workspace/src/github.com/kn9ts/frodo"
 	"github.com/kevgathuku/mailer/controllers"
 	"log"
