@@ -67,11 +67,9 @@ func sendMail(from, to, subject, htmlContent string, mailer *mail.Mailer,
 		return
 	}
 
-	if !debug {
-		if err := mailer.Send(message); err != nil {
-			fail <- err
-			return
-		}
+	if err := mailer.Send(message); err != nil {
+		fail <- err
+		return
 	}
 
 	success <- message
