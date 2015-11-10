@@ -1,3 +1,7 @@
+// Substantial portions of this file are based on postman
+// which is under the MIT license.
+// See https://github.com/zachlatta/postman
+
 package controller
 
 import (
@@ -52,10 +56,6 @@ func sendMail(from, to, subject, htmlContent string, mailer *mail.Mailer,
 		return
 	}
 
-	// Should probably add a clearer distinction somewhere, but in the case that
-	// the user doesn't provide the -html flag, htmlTemplatePath will be an empty
-	// string. If it's an empty string, then it'll be ignored and not parsed and
-	// added to the message within the mail.NewMessage method.
 	message, err := mail.NewMessage(
 		parsedSender,
 		parsedTo,
@@ -143,5 +143,5 @@ func (h *Home) Index(w http.ResponseWriter, r *Frodo.Request) {
 	}
 	fmt.Println()
 
-	w.Write([]byte("Newsletter Successfully added to the queue"))
+	w.Write([]byte("Newsletter Successfully Sent!"))
 }
