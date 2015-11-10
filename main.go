@@ -28,5 +28,9 @@ func main() {
 
 	// Specify PORT as an environment variable
 	// Necessary for running on Heroku
-	App.ServeOnPort(os.Getenv("PORT"))
+	port := "3102"
+	if(os.Getenv("PORT") != "") {
+		port = os.Getenv("PORT")
+	}
+	App.ServeOnPort(port)
 }
